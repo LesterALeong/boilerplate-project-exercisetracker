@@ -157,11 +157,3 @@ app.get('/api/users/:_id/logs', async (req, res) => {
 const listener = app.listen(process.env.PORT || 3000, () => {
   console.log('Your app is listening on port ' + listener.address().port);
 });
-```
-
-## **Additional files you may need:**
-
-### **.env** (create this if it doesn't exist)
-```
-MONGO_URI=your_mongodb_connection_string_here
-PORT=3000
